@@ -9,9 +9,9 @@ require("vendor/autoload.php");
 $f3 = Base::instance();
 
 $f3->route('GET /', function() {
-    //$view = new Template();
-    //echo $view->render('views/all-about-chickens.html');
-    echo "Pet Home";
+    $view = new Template();
+    echo $view->render('views/home.html');
+    //echo "Pet Home";
 });
 
 // Run F3
